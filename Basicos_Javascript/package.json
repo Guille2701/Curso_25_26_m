@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ejercicio2.js",
-    "banco": "node ejercicio3.js"
+    "start": "node src/ejercicio2.js",
+    "banco": "node src/ejercicio3.js"
   },
   "keywords": [],
   "author": "",

@@ -105,6 +105,7 @@ function filtrarLongitud(nombres, longitud){
 }
 
 console.log(filtrarLongitud(["Guille","pepe","ana"],5));
+
 // crea una funcion llamada normalizar nombres propios que le pase como parametro un array de nombres y me los
 // devuelva con la letra inicial del nombre y apellidos en mayuscula
 
