@@ -21,16 +21,17 @@ export function getWeatherPromise(city="Granada"){
             const weather = data.weather[0].main;
             switch (weather) {
                 case 'Clouds':
-                    console.log(` ☁${weather}`);
+                    if(data.weather[0].description==="nubes dispersas"){
+                        console.log(` ${arrayImg[2]}${weather}`);
+                    }else{
+                        console.log(` ${arrayImg[0]}${weather}`);   
+                    }    
                     break;
                 case 'Sunny':
-                    console.log(` ☀${weather}`);
+                    console.log(` ${arrayImg[3]}${weather}`);
                     break;
                 case 'Rain':
-                    console.log(` ⛈${weather}`);
-                    break;
-                case 'Sun and Clouds':
-                    console.log(` ⛅${weather}`);
+                    console.log(` ${arrayImg[1]}${weather}`);
                     break;
                 default:
                     break;
